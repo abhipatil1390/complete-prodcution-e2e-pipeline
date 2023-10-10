@@ -29,9 +29,9 @@ metadata:
 spec:
   selector:
     app: healthapp 
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
-    port: 5000
-    targetPort: 8000
+    port: 5080
+    targetPort: 8080
     nodePort: 31110
