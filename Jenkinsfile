@@ -25,7 +25,7 @@ pipeline {
            }
         stage("Code Checkout") {
             steps{
-                  git branch: 'master', credentialsId: 'github', poll: false, url: 'https://github.com/abhipatil1390/Java_Project_Health_App.git'
+                  git branch: 'master', credentialsId: 'github', poll: false, url: 'https://github.com/abhipatil1390/complete-prodcution-e2e-pipeline.git'
                  } 
         }
         stage('Build application') {
