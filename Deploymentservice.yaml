@@ -18,7 +18,7 @@ spec:
       - name: healthapp
         image: abhipatil1390/healthapp:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
 
 ---
 
@@ -32,6 +32,6 @@ spec:
   type: NodePort
   ports:
   - protocol: TCP
-    port: 8080
+    port: 8000
     targetPort: 8000
     nodePort: 31110
